@@ -6,16 +6,16 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 
 # FRONT OFFICE : Traders and orders will be created.
 
---  there are N users in each SE having 2 options to buy or sell their stock.
---  they have 4 options/(types of orders) to sell(0) or buy(1):
+-there are N users in each SE having 2 options to buy or sell their stock.
+-they have 4 options/(types of orders) to sell(0) or buy(1):
         
-        ## 1:: traded at Ask/Bid prices
-        ## 2:: traded at market prices
-        ## 3:: traded at Limit prices (>= || <=: prices)
-        ## 4:: traded at market price if hit the userStopOrder
+        1:: traded at Ask/Bid prices
+        2:: traded at market prices
+        3:: traded at Limit prices (>= || <=: prices)
+        4:: traded at market price if hit the userStopOrder
         
---  all the options will be generated randomly to simulate a market with many users
---  different tunning are done to make graphs look like real markets.
+-all the options will be generated randomly to simulate a market with many users
+different tunning are done to make graphs look like real markets.
 
 #### Functions in the first section are
  
