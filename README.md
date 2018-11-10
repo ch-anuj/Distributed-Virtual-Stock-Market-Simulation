@@ -3,10 +3,10 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 ``` mpirun --oversubscribe -n <number_of_stockexchange> python <file_name>```
 
 # THERE ARE 3 PHASES:
-=============================================
+=====================
 
 1) FRONT OFFICE : Traders and orders will be created.
-============================================
+=====================================================
 
 --  there are N users in each SE having 2 options to buy or sell their stock.
 --  they have 4 options/(types of orders) to sell(0) or buy(1):
@@ -40,7 +40,7 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 - this is to furthur extend the project for calculating demand of stocks in the market.
 
 2) MIDDLE OFFICE: Trades will be matched.
-============================================
+==========================================
 
 ## Functions in the first section are
 
@@ -52,7 +52,7 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 - fourth pass is for remaining limit orders among each other.
 
 3) BACK OFFICE: Prices will be broadcasted and updated.
-===============================================================
+========================================================
 
 ## Functions in the first section are
 
