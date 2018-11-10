@@ -3,10 +3,8 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 ``` mpirun --oversubscribe -n <number_of_stockexchange> python <file_name>```
 
 # THERE ARE 3 PHASES:
-=====================
 
-1) FRONT OFFICE : Traders and orders will be created.
-=====================================================
+# FRONT OFFICE : Traders and orders will be created.
 
 --  there are N users in each SE having 2 options to buy or sell their stock.
 --  they have 4 options/(types of orders) to sell(0) or buy(1):
@@ -19,7 +17,7 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 --  all the options will be generated randomly to simulate a market with many users
 --  different tunning are done to make graphs look like real markets.
 
-## Functions in the first section are
+#### Functions in the first section are
  
 1) createUserList(K):
 - will return the list of users from 0 to k-1
@@ -39,10 +37,9 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 6) demand(bidList):
 - this is to furthur extend the project for calculating demand of stocks in the market.
 
-2) MIDDLE OFFICE: Trades will be matched.
-==========================================
+# MIDDLE OFFICE: Trades will be matched.
 
-## Functions in the first section are
+#### Functions in the first section are
 
 1) getMatchOrders(userList, sellersBuyers, orderType, userOrders, marketPrice, userStopOrdersSell, userStopOrdersBuy):
 - there are 4 passes in this Functions.
@@ -51,10 +48,9 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 - third pass is for limit orders.
 - fourth pass is for remaining limit orders among each other.
 
-3) BACK OFFICE: Prices will be broadcasted and updated.
-========================================================
+# BACK OFFICE: Prices will be broadcasted and updated.
 
-## Functions in the first section are
+#### Functions in the first section are
 
 1) findHighLow(highLow,matchList):
 - this will return the local high and low of the stock.
@@ -83,12 +79,11 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 9) startMarket(highLow,currP):
 - this function contains all the different functions in specific order to sequentially execute the program.
 
-PLATFORM : mpi4py in python is used for communication between the processes
-==============================================================================
+# PLATFORM : mpi4py in python is used for communication between the processes
 
 
-REFERENCES
-==========
+# REFERENCES
+
 1) https://www.investopedia.com/exam-guide/series-65/trading-securities/order-types.asp
 
 2) https://rabernat.github.io/research_computing/parallel-programming-with-mpi-for-python.html
