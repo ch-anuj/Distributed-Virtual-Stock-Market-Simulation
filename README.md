@@ -1,13 +1,10 @@
-=============================================
 TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 ============================================
 ``` mpirun --oversubscribe -n <number_of_stockexchange> python <file_name>```
 
-=============================================
 # THERE ARE 3 PHASES:
 =============================================
 
-============================================
 1) FRONT OFFICE : Traders and orders will be created.
 ============================================
 
@@ -42,7 +39,6 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 6) demand(bidList):
 - this is to furthur extend the project for calculating demand of stocks in the market.
 
-============================================
 2) MIDDLE OFFICE: Trades will be matched.
 ============================================
 
@@ -55,7 +51,6 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 - third pass is for limit orders.
 - fourth pass is for remaining limit orders among each other.
 
-===============================================================
 3) BACK OFFICE: Prices will be broadcasted and updated.
 ===============================================================
 
@@ -88,12 +83,10 @@ TO RUN THE VIRTUAL STOCK MARKET SIMULATION
 9) startMarket(highLow,currP):
 - this function contains all the different functions in specific order to sequentially execute the program.
 
-==============================================================================
 PLATFORM : mpi4py in python is used for communication between the processes
 ==============================================================================
 
 
-==========
 REFERENCES
 ==========
 1) https://www.investopedia.com/exam-guide/series-65/trading-securities/order-types.asp
